@@ -6,15 +6,15 @@
 * 目录结构
     ```
     ├── config                  //配置文件
-    ├── controller            //逻辑业务层
-    ├── doc                      //文档
+    ├── controller              //逻辑业务层
+    ├── doc                     //文档
     ├── library                 //拓展库
     │   ├── common
     │   ├── error
     │   └── system
-    ├── middleware        //中间件
-    ├── model                 //模型层
+    ├── middleware             //中间件
+    ├── model                  //模型层
     ├── public                 //静态资源
     ├── router                 //路由
-    └── vendor               //第三方依赖
+    └── vendor                 //第三方依赖
     ```
