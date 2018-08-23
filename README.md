@@ -6,7 +6,7 @@
 * 目录结构
     ```
     ├── config                  //配置文件
-    ├── controller              //逻辑业务层
+    ├── controller              //逻辑层
     ├── doc                     //文档
     ├── library                 //拓展库
     │   ├── common
