@@ -12,9 +12,9 @@
     │   ├── common
     │   ├── error
     │   └── system
-    ├── middleware             //中间件
-    ├── model                  //模型层
-    ├── public                 //静态资源
-    ├── router                 //路由
-    └── vendor                 //第三方依赖
+    ├── middleware              //中间件
+    ├── model                   //模型层
+    ├── public                  //静态资源
+    ├── router                  //路由
+    └── vendor                  //第三方依赖
     ```
