@@ -19,5 +19,5 @@ func (ctl *IndexController) Index(ctx *gin.Context) {
 func (ctl *IndexController) Auth(ctx *gin.Context) {
 	io := sys.IO{Ctx: ctx}
 	// some code
-	io.Response(e.SUCCESS, gin.H{}, "Auth Test")
+	io.Response(e.SUCCESS, nil, "Auth Test")
 }

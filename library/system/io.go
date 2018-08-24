@@ -39,10 +39,11 @@ func (io *IO) Response(args ...interface{}) {
 		if tmp, ok := args[0].(int); ok {
 			code = tmp
 		}
-	}
-
-	if msg == "" {
-		msg = e.GetMsg(code)
+		fallthrough
+	default:
+		if msg == "" {
+			msg = e.GetMsg(code)
+		}
 	}
 
 	io.Ctx.JSON(http.StatusOK, gin.H{
@@ -75,14 +76,30 @@ func (io *IO) Post(args ...string) string {
 	return io.Ctx.PostForm(args[0])
 }
 
-func (io *IO) Header(args ...string) http.Header {
-	return io.Ctx.Request.Header
-}
-
+/**
+ * 请求实例
+ */
 func (io *IO) Request() *http.Request {
 	return io.Ctx.Request
 }
 
+/**
+ * 请求头部信息
+ */
+func (io *IO) Header() http.Header {
+	return io.Ctx.Request.Header
+}
+
+/**
+ * 客户端 IP
+ */
+func (io *IO) Ip() string {
+	return io.Ctx.ClientIP()
+}
+
+/**
+ * 数据打印
+ */
 func (io *IO) Show(args ...interface{}) {
 	log.Println("GoCL Debug By", time.Now().Format("2006-01-02 15:04:05"),
 		"\n------------------------------")

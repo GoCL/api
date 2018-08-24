@@ -36,6 +36,6 @@ func Init() *gin.Engine {
 	/**
 	 * Not Found
 	 */
-	router.NoRoute(common.NotFound)
+	router.NoRoute(comm.NotFound)
 	return router
 }
