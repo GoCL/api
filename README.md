@@ -25,7 +25,7 @@
 
 * 获取源码 (将代码放置于Go环境 src 目录下)
 
-    `git clone git@github.com:GoCL/api.git`
+    `git clone git@github.com:GoCL/api.git gocl`
 
 * 入口文件
 
